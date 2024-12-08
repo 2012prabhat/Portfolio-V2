@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Home from './/Home';
 import Services from './Services';
@@ -10,12 +10,12 @@ import Navbar from './Navbar';
 import AnimatedRoutes from './AnimatedRoutes';
 
 export default function Routing() {
-
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
   
   
   return (
     <BrowserRouter>
-        <Navbar/>
+        <Navbar theme={[theme,setTheme]}/>
       {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -24,7 +24,7 @@ export default function Routing() {
         <Route path="/hire-me" element={<HireMe />} />
         <Route path="/contact" element={<Contact />} />
       </Routes> */}
-      <AnimatedRoutes/>
+      <AnimatedRoutes theme={theme}/>
     </BrowserRouter>
   )
 }

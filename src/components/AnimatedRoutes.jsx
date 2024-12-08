@@ -10,7 +10,7 @@ import HireMe from './HireMe';
 import Contact from './Contact';
 import Stairs from './Stairs'
 
-function AnimatedRoutes() {
+function AnimatedRoutes({theme}) {
   const location = useLocation(); // Works because it's inside BrowserRouter
 
   // Page animation variants
@@ -26,7 +26,7 @@ function AnimatedRoutes() {
             <Stairs/>
         </div>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home theme={theme}/>} />
           <Route path="/services" element={<Services />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
