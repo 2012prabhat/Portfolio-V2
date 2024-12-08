@@ -1,0 +1,34 @@
+/* Stairs container */
+
+.stairsCont{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 40;
+    display: flex;
+}
+.stairs {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Divide viewport equally among 6 bars */
+    z-index: 9999; /* Ensure stairs are on top */
+    background: black;
+  }
+  
+  /* Alternate colors for stairs */
+  /* .black-bar {
+    background-color: black;
+  }
+  
+  .white-bar {
+    background-color: white;
+  } */
+  
+
+  .dark .stairs{
+    background: white;
+  }

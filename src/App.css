@@ -1,0 +1,27 @@
+:root{
+  --activeCol:#2980b9;
+  --darkActiveCol:#00ff99;
+  --darkBlack:#1c1b22;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: calibri;
+}
+
+body{
+  font-size: 16px;
+}
+/* Light Theme */
+.light {
+  /* background-color: #ECF0F1; */
+  background-color: white;
+  color: #000000;
+}
+
+/* Dark Theme */
+.dark {
+  background-color: var(--darkBlack);
+  color: #ffffff;
+}
