@@ -134,6 +134,11 @@
     object-fit: cover;
     border-radius: 50%;
     position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .profile-pic:hover{
+    transform: scale(0.95);
   }
   
   /* Stats Section */
