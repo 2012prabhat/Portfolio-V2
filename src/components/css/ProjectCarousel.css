@@ -1,0 +1,45 @@
+.carousel-container {
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-container  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-container .slide {
+    transform: translateX(-100%);
+  }
+  
+  .carousel-container .project-card {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-container .project-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .carousel-container .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-container button {
+    margin: 0 5px;
+    padding: 5px 20px;
+
+
+  }
+  

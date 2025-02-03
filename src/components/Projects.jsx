@@ -1,7 +1,18 @@
 import React from 'react'
+import './css/Projects.css'
+import ProjectsCarousel from './ProjectCarousel'
+
 
 export default function Projects() {
   return (
-    <div>Projects</div>
+    <div className="projectsCont">
+     <h1>What I've Built</h1>
+     <h3>A showcase of projects where I applied my creativity and technical skills.
+
+</h3>
+
+<ProjectsCarousel/>
+    </div>
+   
   )
 }
