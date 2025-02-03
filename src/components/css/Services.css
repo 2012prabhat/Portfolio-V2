@@ -7,9 +7,7 @@
   color: var(--activeCol);
 }
 
-.dark .servicesCont h1 {
-  color: var(--darkActiveCol);
-}
+
 
 .servicesCont h3 {
   text-align: center;
@@ -45,7 +43,7 @@
 .dark .servicesCont .cardsCont .card {
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 10px var(--darkActiveCol),
+  box-shadow: 0 4px 10px var(--activeCol),
     /* Dark shadow */ 0 1px 2px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -81,7 +79,7 @@
 }
 
 .dark .servicesCont .cardsCont .card button {
-  background: var(--darkActiveCol);
+  background: var(--activeCol);
   color: black;
 }
 .servicesCont .cardsCont .card .title {
@@ -92,7 +90,7 @@
 
 .dark .servicesCont .cardsCont .card .title {
    margin: 10px 0;
-   color: var(--darkActiveCol);
+   color: var(--activeCol);
  }
 
 .servicesCont .cardsCont .card img {

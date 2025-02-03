@@ -34,10 +34,7 @@
   }
 
   
-  .dark .nav-link.active {
-    color:var(--darkActiveCol);
-  
-  }
+
 
   .nav-link.active::after {
   content: '';
@@ -50,9 +47,7 @@
   background-color:var(--activeCol); /* Underline color */
 }
 
-.dark .nav-link.active::after {
-    background-color: var(--darkActiveCol);
-}
+
 
 
 
