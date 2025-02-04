@@ -10,7 +10,7 @@ export default function Projects() {
      <h3>A showcase of projects where I applied my creativity and technical skills.
 
 </h3>
-
+<br />
 <ProjectsCarousel/>
     </div>
    

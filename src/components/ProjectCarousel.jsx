@@ -1,58 +1,56 @@
-import React, { useState } from "react";
-import "./css/ProjectCarousel.css";
+import React from "react";
 
-const projects = [
-  { id: 1, title: "Care Buddy", image: "https://via.placeholder.com/150" },
-  { id: 2, title: "Global Survey Solutions", image: "/Projects/Gss/gss.png" },
-  { id: 3, title: "Project 3", image: "https://via.placeholder.com/150" },
-  { id: 4, title: "Project 4", image: "https://via.placeholder.com/150" },
-  { id: 5, title: "Project 5", image: "https://via.placeholder.com/150" },
-  { id: 6, title: "Project 6", image: "https://via.placeholder.com/150" },
-];
 
-const ProjectsCarousel = () => {
-  const [page, setPage] = useState(0);
-  const [animating, setAnimating] = useState(false);
+import ProjectSlide from "./ProjectSlide";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import "./css/ProjectCarousel.css"
+import projectData from "./ProjectData";
 
-  const projectsPerPage = 3;
-  const totalPages = Math.ceil(projects.length / projectsPerPage);
 
-  const nextPage = () => {
-    if (page < totalPages - 1) {
-      setAnimating(true);
-      setTimeout(() => {
-        setPage((prev) => prev + 1);
-        setAnimating(false);
-      }, 500);
-    }
-  };
 
-  const prevPage = () => {
-    if (page > 0) {
-      setAnimating(true);
-      setTimeout(() => {
-        setPage((prev) => prev - 1);
-        setAnimating(false);
-      }, 500);
-    }
-  };
+function Projects() {
+
 
   return (
-    <div className="carousel-container">
-      <div className={`carousel ${animating ? "slide" : ""}`}>
-        {projects.slice(page * projectsPerPage, (page + 1) * projectsPerPage).map((project) => (
-          <div key={project.id} className="project-card">
-            <img src={project.image} alt={project.title} className="project-image" />
-            <div className="card-content">{project.title}</div>
-          </div>
-        ))}
-      </div>
-      <div className="pagination">
-        <button onClick={prevPage} disabled={page === 0}>Prev</button>
-        <button onClick={nextPage} disabled={page === totalPages - 1}>Next</button>
-      </div>
-    </div>
-  );
-};
+    <section className="projects">
+      <div className="proCont">
 
-export default ProjectsCarousel;
+<Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+    
+      // onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
+    >
+
+    {projectData?.map((m,i)=>{
+ return <SwiperSlide>
+ <ProjectSlide
+   proImg={m.img}
+   proName={m.name}
+   heading = {m.heading}
+   overview={m.overview}
+   features={m.features}
+   techStack={m.techStack}
+
+   />
+ </SwiperSlide>
+    })
+     
+}
+    </Swiper>
+        
+      </div>
+    </section>
+  );
+}
+
+export default Projects;

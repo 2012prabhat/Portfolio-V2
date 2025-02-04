@@ -1,45 +1,121 @@
-.carousel-container {
-    width: 100%;
-    max-width: 80vw;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .carousel-container  .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-container .slide {
-    transform: translateX(-100%);
-  }
-  
-  .carousel-container .project-card {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .carousel-container .project-image {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .carousel-container .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .carousel-container button {
-    margin: 0 5px;
-    padding: 5px 20px;
+.projects{
+  /* padding-top: 50px; */
+  /* height: auto !important; */
+  /* background:var(--color1); */
+  /* padding-top: 5%; */
+}
+
+.projects .head{
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color: var(--color2);
+}
+
+.projects .proCont{
+  /* margin-top: 2%; */
+  /* border: 1px solid black; */
+  /* height: 75%; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* padding: 0 5%; */
+  /* overflow: auto; */
+}
+
+.projects .proCont .projectCard{
+  /* border: 1px solid black; */
+  /* margin-top: 5%; */
+  height: 40%;
+  width: 30%;
+  /* cursor: pointer; */
+}
+
+.projects .proCont .projectCard img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4em;
+}
+
+.projects .proCont .projectCard .nameDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: black;
+  background: white;
+  width: 60%;
+  margin-left: 20%;
+  margin-top:5%;
+  /* font-weight: bold; */
+}
+
+.projects .proCont .projectData{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* color: white; */
+  margin-bottom: 1%;
+  font-size: 0.8em;
+  /* transform: scale(0.9); */
+}
+
+.projects .proCont .projectData .proDesc{
+  width: 65%;
+  /* text-align: center; */
+}
+
+.projects .proCont .projectData .proDesc .techStack img{
+  max-height: 8%;
+  max-width: 8%;
+  margin-right: 2%;
+}
+
+.featuresCont{
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects a{
+  text-decoration: none;
+}
 
 
+.swiper.swiper-initialized{
+  /* height: 350px; */
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
   
+  .swiper-slide{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next{
+      color:var(--activeCol) !important;
+      font-weight: bold;
+  }
+  
+  .swiper-pagination-bullet{
+      background: var(--activeCol) !important;
+  }
+
+  .swiper-pagination{
+    bottom: -4px !important;
+
+  }
+  
+  .swiper-scrollbar-drag{
+  background:var(--activeCol) !important;
+  }
+  
+
+ 
+
+ 
