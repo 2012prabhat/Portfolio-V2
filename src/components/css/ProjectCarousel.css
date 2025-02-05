@@ -13,13 +13,13 @@
 }
 
 .projects .proCont{
-  /* margin-top: 2%; */
+  margin-top: 2%;
   /* border: 1px solid black; */
   /* height: 75%; */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* padding: 0 5%; */
+  padding: 1% 5%;
   /* overflow: auto; */
 }
 
@@ -43,10 +43,7 @@
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  color: black;
-  background: white;
-  width: 60%;
-  margin-left: 20%;
+  color: var(--activeCol);
   margin-top:5%;
   /* font-weight: bold; */
 }
@@ -65,12 +62,21 @@
   width: 65%;
   /* text-align: center; */
 }
-
-.projects .proCont .projectData .proDesc .techStack img{
-  max-height: 8%;
-  max-width: 8%;
-  margin-right: 2%;
+.projects .proCont .projectData .proDesc .techStack .techImgCont{
+  display: flex;
 }
+.projects .proCont .projectData .proDesc .techStack  img{
+  margin-right: 5px;
+  height: 40px;
+}
+
+.projects .proCont .projectData .proDesc .bottomCont{
+  display: flex;
+  width: 100%;
+ gap: 10%;
+ margin-top: 1%;
+}
+
 
 .featuresCont{
   display: flex;
@@ -80,6 +86,9 @@
 .projects a{
   text-decoration: none;
 }
+
+
+
 
 
 .swiper.swiper-initialized{
@@ -115,7 +124,3 @@
   background:var(--activeCol) !important;
   }
   
-
- 
-
- 

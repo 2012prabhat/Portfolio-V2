@@ -89,7 +89,7 @@ const Home = ({theme}) => {
           cx="253"
           cy="253"
           r="250"
-          stroke={theme=='dark'?'var(--darkActiveCol)':'var(--activeCol)'}
+          stroke={'var(--activeCol)'}
           strokeWidth="4"
           strokeLinecap="round"
           strokeLinejoin="round"
