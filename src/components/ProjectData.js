@@ -18,7 +18,7 @@ const projectData = [
         links: {
           desc:"",
           github: "",
-          live: ""
+          live: "https://www.globalsurveysolutions.com/"
         }
       },
       
@@ -47,7 +47,7 @@ const projectData = [
           links: {
             desc:"",
             github: "",
-            live: ""
+            live: "https://psnipp.netlify.app/"
           }
       },
 

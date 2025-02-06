@@ -41,6 +41,7 @@ function Projects() {
    overview={m.overview}
    features={m.features}
    techStack={m.techStack}
+   link={m.links}
 
    />
  </SwiperSlide>

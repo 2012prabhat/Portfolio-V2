@@ -63,15 +63,15 @@ export default function ProjectSlide(props) {
           <div>Links :- </div>
           <br />
           <div className="techImgCont">
-                  <a href="">
+                  <a href="" target="_blank">
                   <img data-tooltip-id="tooltip-1" src="/Skills/github.svg" alt="" />
                   <Tooltip style={toolTipStyle} id="tooltip-1" content={<div>Github</div>} />
                   </a>
-                  <a href="">
+                  <a href={props.link.live} target="_blank">
                   <img data-tooltip-id="tooltip-2" src="/Skills/globe.svg" alt="" />
                   <Tooltip style={toolTipStyle} id="tooltip-2" content={<div>Live</div>} />
                   </a>
-                  <a href="">
+                  <a href="" target="_blank">
                   <img data-tooltip-id="tooltip-3" src="/Skills/gallery.svg" alt="" />
                   <Tooltip style={toolTipStyle} id="tooltip-3" content={<div>Screens</div>} />
                   </a>

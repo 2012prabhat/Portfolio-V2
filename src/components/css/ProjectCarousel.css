@@ -55,6 +55,7 @@
   /* color: white; */
   margin-bottom: 1%;
   font-size: 0.8em;
+  /* flex-direction: column; */
   /* transform: scale(0.9); */
 }
 
@@ -124,3 +125,25 @@
   background:var(--activeCol) !important;
   }
   
+
+  @media screen and (max-width:700px){
+    .projects .proCont .projectData .proDesc .bottomCont{
+
+      flex-direction: column;
+    }
+.projects .proCont .projectCard {
+  width: 100%;
+}
+
+.projects .proCont .projectData .proDesc {
+  width: 100%;
+}
+
+.featuresCont{
+  flex-direction: column;
+}
+
+.projects .proCont .projectData{
+  flex-direction: column;
+}
+  }
