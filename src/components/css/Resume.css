@@ -1,0 +1,8 @@
+.skillCont{
+    display: flex;
+    justify-content: flex-start;
+    gap:12px 10%;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    padding: 0% 5%;
+}

@@ -25,6 +25,7 @@ function AnimatedRoutes({theme}) {
         <div className="stairsCont">
             <Stairs/>
         </div>
+        <div style={{marginTop:'70px'}}>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home theme={theme}/>} />
           <Route path="/services" element={<Services />} />
@@ -33,6 +34,8 @@ function AnimatedRoutes({theme}) {
           <Route path="/hire-me" element={<HireMe />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        </div>
+       
  
     </AnimatePresence>
   );
