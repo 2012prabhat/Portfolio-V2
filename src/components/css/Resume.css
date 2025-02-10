@@ -4,5 +4,35 @@
     gap:12px 10%;
     margin-top: 2%;
     flex-wrap: wrap;
-    padding: 0% 5%;
+    padding: 0% 5%; 
 }
+
+.workEx{
+    padding:0% 5%;
+    margin-top: 2%;
+}
+
+.workEx .title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-bottom:4px solid var(--activeCol);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+
+}
+
+.workEx .resp{
+    margin-top: 20px;
+}
+
+.workEx .resp li{
+margin-top: 5px;
+}
+
+.workEx .time{
+    font-style: italic;
+}
+

@@ -136,7 +136,7 @@ const Home = ({theme}) => {
       </div>
       <div className="stat">
         <h2>
-          <CountUp end={8} duration={3} delay={2} />
+          <CountUp end={10} duration={3} delay={2} />
         </h2>
         <p>Technologies mastered</p>
       </div>
