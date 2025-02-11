@@ -59,11 +59,11 @@ export default function Navbar(props) {
           Projects
         </NavLink>
         <NavLink to="/contact" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
-          Contact
+          Contact Me
         </NavLink>
-        <NavLink to="/hire-me" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
+        {/* <NavLink to="/hire-me" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
           Hire Me
-        </NavLink>
+        </NavLink> */}
       </div>
       <button className="theme-button" onClick={toggleTheme}>
         <FontAwesomeIcon icon={theme === "light" ? faMoon : faSun} />

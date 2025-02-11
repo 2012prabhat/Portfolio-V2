@@ -17,7 +17,7 @@ body{
   background-color: white;
   color: #000000;
   --activeCol:#2980b9;
-  --textCol:white;
+  --textCol:black;
   --bgCol:#ffff;
 
 
@@ -29,7 +29,7 @@ body{
   background: radial-gradient(circle, rgba(10,10,22,1) 55%, rgba(22,24,55,1) 99%);
   color: #ffffff;
   --activeCol:#00ff99;
-  --textCol:black;
+  --textCol:white;
   --bgCol:#1c1b22;
 
 
