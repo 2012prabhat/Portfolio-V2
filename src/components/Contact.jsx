@@ -3,6 +3,7 @@ import "./css/Contact.css"
 import { faEnvelope, faPhone, faMapPin, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import emailjs from 'emailjs-com';
+import { showErrorCard } from './ErrorCard';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -22,22 +23,32 @@ function Contact() {
       alert("Please fill in all required fields.");
       return;
     }
+
+
+    const templateParams = {
+      "name":formData.name,
+      "mob":formData.phone,
+      "email":formData.email,
+      "message":formData.message
+  }
     try{
-      const response = await emailjs.send('service_yamb2qn', 'template_dy58rfo', formData, 'bizYb2sO0695l7E04');
-      if(response.status == 200) alert('Email sent successfully','success')
+      const response = await emailjs.send('service_yamb2qn', 'template_dy58rfo', templateParams, 'bizYb2sO0695l7E04');
+      if(response.status == 200) showErrorCard('Email sent successfully','success')
       e.target.reset();
 } catch (error) {
 
   console.error('Error sending email:', error);
-  alert('Error sending email', 'error')
+  showErrorCard('Error sending email', 'error')
 }
 
   };
   return (
     <div className='contactCont'>
-      <div className="left">
+
         <h1>Let's Harmonize Success Together: <br />
         Your Vision, My Expertise</h1>
+
+        <div className="myDetails">
         <div className='iconCont'>
         <FontAwesomeIcon className='icon' icon={faEnvelope} /><span>2012prabhat@gmail.com</span>
         </div>
@@ -48,10 +59,12 @@ function Contact() {
         <div className='iconCont'>
         <FontAwesomeIcon className='icon' icon={faMapPin} /><span>Delhi, India</span>
         </div>
+        </div>
+        
       
         
-      </div>
-      <div className="right">
+    
+  
       <form className="contact-form" onSubmit={handleSubmit}>
       <div className="input-group">
         <FontAwesomeIcon className='icon' icon={faUser} />
@@ -99,7 +112,7 @@ function Contact() {
       <button type="submit">Send Message</button>
     </form>
       </div>
-    </div>
+    
   )
 }
 

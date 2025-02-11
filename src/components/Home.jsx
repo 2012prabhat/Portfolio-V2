@@ -75,7 +75,8 @@ const Home = ({theme}) => {
       <div className="profile">
         <div className="profile-circle">
           <img
-            src={profilePic}
+            // src={profilePic}
+            src="pic.png"
             alt="Prabhat Kumar"
             className="profile-pic"
           />
