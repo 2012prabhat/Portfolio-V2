@@ -16,6 +16,8 @@
     /* min-width: 50px; */
     color: var(--activeCol);
     margin-right: 10px;
+  min-width: 20px;
+
 }
 .contactCont h1{
     color: var(--activeCol);
@@ -26,11 +28,13 @@
 
 .contactCont .myDetails{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 
 .contact-form {
-    width: 100%;
+    width: 50%;
     /* max-width: 400px; */
     margin: auto;
     padding: 20px;
@@ -95,3 +99,21 @@
     font-size: 1rem;
   }
   
+
+  @media screen and (max-width:700px) {
+    .contact-form {
+      width: 95%;
+    }
+
+    .contactCont .myDetails{
+     justify-content: start;
+     flex-direction: column;
+    }
+
+    
+.contactCont .iconCont {
+  justify-content: start;
+}
+
+
+  }

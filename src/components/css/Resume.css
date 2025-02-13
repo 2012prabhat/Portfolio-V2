@@ -36,3 +36,14 @@ margin-top: 5px;
     font-style: italic;
 }
 
+
+@media screen and (max-width:700px) {
+    .workEx{
+        margin-top: 30px;
+    }
+
+    .workEx .title{
+        font-size: 17px;
+        flex-direction: column;
+    }
+}
