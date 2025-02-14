@@ -4,6 +4,10 @@
     color: var(--activeCol);
   }
   
+
+  .navDis .projects .proCont {
+    z-index: -1;
+  }
   
   
   .projectsCont h3 {

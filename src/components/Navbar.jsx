@@ -30,6 +30,14 @@ export default function Navbar(props) {
     };
   }, []);
 
+  useEffect(()=>{
+    if(navDis){
+      document.querySelector("body").classList.add("navDis");
+    }else{
+      document.querySelector("body").classList.remove("navDis");
+    }
+  },[navDis])
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);

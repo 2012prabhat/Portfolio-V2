@@ -98,6 +98,16 @@
   .navMobBtn{
     display: block;
   }
+
+  .sidebar {
+    position: fixed; /* or absolute/relative */
+    z-index: 1001; /* Higher than Swiper */
+  }
+  
+  .swiper-container {
+    position: relative;
+    z-index: 999; /* Lower than sidebar */
+  }
   }
   
 
