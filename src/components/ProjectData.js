@@ -1,6 +1,32 @@
 const projectData = [
+  {
+    id: 1,
+    img: "/Projects/cartHub.png",
+    name: "CartHub",
+    heading: "A Shopping Dashboard for Product Management",
+    overview: `CartHub is a shopping admin panel designed to manage products efficiently for an e-commerce website. The dashboard allows users to add, update, and remove products while providing a structured and user-friendly interface. Built with React.js, Material UI, and Bootstrap, it ensures a modern and responsive experience with interactive UI components.`,
+    features: [
+      "Product Management System",
+      "Interactive Dashboard UI",
+      "Responsive and Modern Design",
+      "Real-Time Product Updates",
+      "Material UI Components",
+      "Optimized Performance"
+    ],
+    techStack: [
+      { name: "React", img: "/Skills/react.png" },
+      { name: "Material UI", img: "/Skills/mui.svg" },
+      { name: "Bootstrap", img: "/Skills/bootstrap.svg" },
+      { name: "JavaScript", img: "/Skills/js.png" }
+    ],
+    links: {
+      desc: "",
+      github: "https://github.com/2012prabhat/CartHub",
+      live: "https://shopping-dashboard-beta.vercel.app/"
+    }
+},
     {
-        id: 1,
+        id: 2,
         img: "/Projects/gss.png",
         name: "Global Survey Solutions",
         heading: "A Professional Organization Website",
@@ -23,7 +49,7 @@ const projectData = [
       },
       
     {
-        id:2,
+        id:3,
         img:"/Projects/pSnipp.jpeg",
         name:"PSnipp",
         heading:"A Code Snippet Manager",
