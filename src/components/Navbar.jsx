@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "./css/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +9,7 @@ export default function Navbar(props) {
   const [navDis, setNavDis] = useState(false);
   const [theme, setTheme] = props.theme;
   const [isScrolled, setIsScrolled] = useState(false);
+  const navRef = useRef(null);
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -48,12 +49,30 @@ export default function Navbar(props) {
     };
   }, []);
 
+
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setNavDis(false); // Close the menu
+      }
+    };
+
+    // Attach the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up the event listener
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navDis]);
+
   let style = isMobile && navDis ? { width: "" } : { width: "0px" };
   if (!isMobile) style = {};
 
   return (
-    <nav className="navbar" style={{ backgroundColor: isScrolled ? "var(--bgCol)" : "transparent" }}>
-      <div className="navBtnCont" style={style}>
+    <nav className="navbar" ref={navRef} style={{ backgroundColor: isScrolled ? "var(--bgCol)" : "transparent" }}>
+      <div className="navBtnCont"  style={style}>
         <NavLink to="/" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
           Home
         </NavLink>
