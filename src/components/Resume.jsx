@@ -7,8 +7,8 @@ export default function Resume() {
   return (
     <>
       <div className="projectsCont">
-        <h1>My Skills</h1>
-        <h3>"Building seamless experiences with clean and efficient code."</h3>
+        <h1 data-aos="fade-in">My Skills</h1>
+        <h3 data-aos="zoom-in">"Building seamless experiences with clean and efficient code."</h3>
 
         <div className="skillCont">
           <ProgressBar progress={85} skill="React Js" icon="react.png" />

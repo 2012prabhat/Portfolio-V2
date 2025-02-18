@@ -48,7 +48,7 @@ const Home = ({theme}) => {
       <div className="intro">
         <h3 className="title">Web Developer</h3>
         <h1 className="name">
-          Hello, I’m <span>Prabhat Kumar</span>
+          Hello, I’m <span data-aos="zoom-in">Prabhat Kumar</span>
         </h1>
         <p className="description">
         I specialize in designing seamless digital experiences and bring expertise in diverse programming languages and modern technologies.
@@ -73,7 +73,7 @@ const Home = ({theme}) => {
 
       {/* Profile Section */}
       <div className="profile">
-        <div className="profile-circle">
+        <div className="profile-circle" data-aos="zoom-in">
           <img
             // src={profilePic}
             src="pic.png"
@@ -122,26 +122,26 @@ const Home = ({theme}) => {
      
       {/* Stats Section */}
       <div className="stats">
-      <div className="stat">
+      <div className="stat" data-aos="fade-in">
         <h2>
           <CountUp end={calculateExperience("07-01-2022")} duration={3} delay={2} decimals={1}
             decimal="." />
         </h2>
         <p>Years of experience</p>
       </div>
-      <div className="stat">
+      <div className="stat" data-aos="fade-in">
         <h2>
           <CountUp end={10} duration={3} delay={2} />
         </h2>
         <p>Projects completed</p>
       </div>
-      <div className="stat">
+      <div className="stat" data-aos="fade-in">
         <h2>
           <CountUp end={10} duration={3} delay={2} />
         </h2>
         <p>Technologies mastered</p>
       </div>
-      <div className="stat">
+      <div className="stat" data-aos="fade-in">
         <h2>
           <CountUp end={499} duration={3} delay={2} />
         </h2>

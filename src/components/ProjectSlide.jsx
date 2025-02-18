@@ -21,9 +21,9 @@ export default function ProjectSlide(props) {
           {props.proName}: {props.heading}
         </div>
         <br />
-        <div>Overview: {props.overview}</div>
+        <div><b>Overview:</b> {props.overview}</div>
         <br />
-        <div>Key Features :-</div>
+        <div><b>Key Features :-</b></div>
 
         <div className="featuresCont">
           <div>
@@ -46,7 +46,7 @@ export default function ProjectSlide(props) {
 
         <div className="bottomCont">
         <div className="techStack">
-          <div>Tech Stack :- </div>
+          <div><b>Tech Stack :-</b> </div>
           <br />
           <div className="techImgCont">
             {props.techStack.map((m, i) => {
@@ -60,7 +60,7 @@ export default function ProjectSlide(props) {
           </div>
         </div>
         <div className="techStack">
-          <div>Links :- </div>
+          <div><b>Links :-</b> </div>
           <br />
           <div className="techImgCont">
                   <a href="" target="_blank">

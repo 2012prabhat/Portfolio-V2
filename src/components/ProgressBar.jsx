@@ -20,7 +20,7 @@ const ProgressBar = ({ progress, icon, skill }) => {
   }, [progress]);
 
   return (
-    <div className="progressComp">
+    <div className="progressComp" data-aos="fade-in">
       <div className="topCont">
         <img src={`./Skills/${icon}`} alt="" />
         <div>{`${displayedProgress} %`}</div>

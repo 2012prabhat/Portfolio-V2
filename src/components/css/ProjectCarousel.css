@@ -52,7 +52,7 @@
 
 .projects .proCont .projectData{
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
   /* color: white; */
   margin-bottom: 1%;
@@ -96,7 +96,7 @@
 
 .swiper.swiper-initialized{
   /* height: 350px; */
-  width: 85%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

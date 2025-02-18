@@ -8,6 +8,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "aos": "^3.0.0-beta.6",
     "cra-template": "1.2.0",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",

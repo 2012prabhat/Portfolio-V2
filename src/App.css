@@ -1,6 +1,10 @@
 :root{
   --darkBlack:#1c1b22;
 }
+
+#root{
+  overflow-x: hidden;
+}
 *{
   box-sizing: border-box;
   padding: 0;

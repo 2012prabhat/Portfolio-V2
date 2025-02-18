@@ -45,7 +45,7 @@ function Contact() {
   return (
     <div className='contactCont'>
 
-        <h1>Let's Harmonize Success Together: <br />
+        <h1 data-aos="zoom-in">Let's Harmonize Success Together: <br />
         Your Vision, My Expertise</h1>
 
         <div className="myDetails">
@@ -65,7 +65,7 @@ function Contact() {
         
     
   
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form" data-aos="fade-in" onSubmit={handleSubmit}>
       <div className="input-group">
         <FontAwesomeIcon className='icon' icon={faUser} />
         <input
