@@ -26,8 +26,8 @@ export default function Resume() {
       </div>
 
       <div className="projectsCont">
-        <h1>Industry Experience</h1>
-        <h3>
+        <h1 data-aos="fade-in">Industry Experience</h1>
+        <h3 data-aos="zoom-in">
           "Transforming ideas into scalable solutions with real-world
           expertise."
         </h3>
@@ -52,8 +52,8 @@ export default function Resume() {
       </div>
 
       <div className="projectsCont">
-        <h1>Academic Background</h1>
-        <h3>"Empowering growth through knowledge and expertise."</h3>
+        <h1 data-aos="fade-in">Academic Background</h1>
+        <h3 data-aos="zoom-in">"Empowering growth through knowledge and expertise."</h3>
         <div className="workEx">
           <div className="title">
             <div>Full Stack Web Development Course</div>

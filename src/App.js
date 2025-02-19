@@ -9,6 +9,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
+      offset:110,
       once: true, // Whether animation should happen only once
     });
   }, []);

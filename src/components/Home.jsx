@@ -56,7 +56,7 @@ const Home = ({theme}) => {
 
         {/* Buttons */}
         <div className="buttons">
-      <button className="btn-download">Download CV</button>
+      {/* <button className="btn-download">Download CV</button> */}
 
        <div className="social-icons">
         <a href="https://github.com/2012prabhat" target="_blank" rel="noopener noreferrer" className="icon">
