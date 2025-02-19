@@ -72,7 +72,7 @@ const projectData = [
           
           links: {
             desc:"",
-            github: "",
+            github: "https://github.com/2012prabhat/PSnip",
             live: "https://psnipp.netlify.app/"
           }
       },
