@@ -6,8 +6,8 @@ export default function ProjectSlide(props) {
   const toolTipStyle = {
     backgroundColor: "var(--activeCol)", // Change to your desired color
     color: "var(--textCol)",
-    fontWeight:"bolder"
-  }
+    fontWeight: "bolder",
+  };
   return (
     <div className="projectData">
       <a className="projectCard">
@@ -21,9 +21,13 @@ export default function ProjectSlide(props) {
           {props.proName}: {props.heading}
         </div>
         <br />
-        <div><b>Overview:</b> {props.overview}</div>
+        <div>
+          <b>Overview:</b> {props.overview}
+        </div>
         <br />
-        <div><b>Key Features :-</b></div>
+        <div>
+          <b>Key Features :-</b>
+        </div>
 
         <div className="featuresCont">
           <div>
@@ -43,49 +47,83 @@ export default function ProjectSlide(props) {
           </div>
         </div>
 
-
         <div className="bottomCont">
-        <div className="techStack">
-          <div><b>Tech Stack :-</b> </div>
-          <br />
-          <div className="techImgCont">
-            {props.techStack.map((m, i) => {
-              return (
-                <>
-                  <img data-tooltip-id={`tooltip-${m.name}`} key={i} src={m.img} alt="skill"/>
-                  <Tooltip style={toolTipStyle} id={`tooltip-${m.name}`} content={<div className="tooltip">{m.name}</div>} />
-                </>
-              );
-            })}
+          <div className="techStack">
+            <div>
+              <b>Tech Stack :-</b>{" "}
+            </div>
+            <br />
+            <div className="techImgCont">
+              {props.techStack.map((m, i) => {
+                return (
+                  <>
+                    <img
+                      data-tooltip-id={`tooltip-${m.name}`}
+                      key={i}
+                      src={m.img}
+                      alt="skill"
+                    />
+                    <Tooltip
+                      style={toolTipStyle}
+                      id={`tooltip-${m.name}`}
+                      content={<div className="tooltip">{m.name}</div>}
+                    />
+                  </>
+                );
+              })}
+            </div>
+          </div>
+          <div className="techStack">
+            <div>
+              <b>Links :-</b>{" "}
+            </div>
+            <br />
+            <div className="techImgCont">
+              {props.link.github && (
+                <a href={props.link.github} target="_blank" rel="noreferrer">
+                  <img
+                    data-tooltip-id="tooltip-1"
+                    src="/Skills/github.svg"
+                    alt=""
+                  />
+                  <Tooltip
+                    style={toolTipStyle}
+                    id="tooltip-1"
+                    content={<div>Github</div>}
+                  />
+                </a>
+              )}
+              {props.link.live && (
+                <a href={props.link.live} rel="noreferrer" target="_blank">
+                  <img
+                    data-tooltip-id="tooltip-2"
+                    src="/Skills/globe.svg"
+                    alt=""
+                  />
+                  <Tooltip
+                    style={toolTipStyle}
+                    id="tooltip-2"
+                    content={<div>Live</div>}
+                  />
+                </a>
+              )}
+              {props.link?.gallery && (
+                <Link to={`/projects/${props.proId}`}>
+                  <img
+                    data-tooltip-id="tooltip-3"
+                    src="/Skills/gallery.svg"
+                    alt="Gallery"
+                  />
+                  <Tooltip
+                    style={toolTipStyle}
+                    id="tooltip-3"
+                    content={<div>Screens</div>}
+                  />
+                </Link>
+              )}
+            </div>
           </div>
         </div>
-        <div className="techStack">
-          <div><b>Links :-</b> </div>
-          <br />
-          <div className="techImgCont">
-            {props.link.github && 
-                  <a href={props.link.github} target="_blank" rel="noreferrer">
-                  <img data-tooltip-id="tooltip-1" src="/Skills/github.svg" alt="" />
-                  <Tooltip style={toolTipStyle} id="tooltip-1" content={<div>Github</div>} />
-                  </a>}
-                  {props.link.live &&  <a href={props.link.live} rel="noreferrer" target="_blank">
-                  <img data-tooltip-id="tooltip-2" src="/Skills/globe.svg" alt="" />
-                  <Tooltip style={toolTipStyle} id="tooltip-2" content={<div>Live</div>} />
-                  </a>}
-                 {props.gallery && <a href="" target="_blank">
-                  <img data-tooltip-id="tooltip-3" src="/Skills/gallery.svg" alt="" />
-                  <Tooltip style={toolTipStyle} id="tooltip-3" content={<div>Screens</div>} />
-                  </a>}
-                  
-                  
-            
-          </div>
-        </div>
-
-        </div>
-        
-
-
       </div>
     </div>
   );

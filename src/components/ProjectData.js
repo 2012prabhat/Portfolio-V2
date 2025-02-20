@@ -22,7 +22,8 @@ const projectData = [
     links: {
       desc: "",
       github: "https://github.com/2012prabhat/CartHub",
-      live: "https://shopping-dashboard-beta.vercel.app/"
+      live: "https://shopping-dashboard-beta.vercel.app/",
+      gallery:4
     }
 },
     {
@@ -44,7 +45,8 @@ const projectData = [
         links: {
           desc:"",
           github: "",
-          live: "https://www.globalsurveysolutions.com/"
+          live: "https://www.globalsurveysolutions.com/",
+          gallery:14
         }
       },
       
@@ -73,7 +75,9 @@ const projectData = [
           links: {
             desc:"",
             github: "https://github.com/2012prabhat/PSnip",
-            live: "https://psnipp.netlify.app/"
+            live: "https://psnipp.netlify.app/",
+            gallery:3
+           
           }
       },
 

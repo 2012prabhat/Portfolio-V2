@@ -35,6 +35,7 @@ function Projects() {
     {projectData?.map((m,i)=>{
  return <SwiperSlide>
  <ProjectSlide
+   proId={m.id}
    proImg={m.img}
    proName={m.name}
    heading = {m.heading}

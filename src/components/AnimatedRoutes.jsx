@@ -9,6 +9,7 @@ import Projects from './Projects';
 import HireMe from './HireMe';
 import Contact from './Contact';
 import Stairs from './Stairs'
+import ProjectScreen from './ProjectScreen';
 
 function AnimatedRoutes({theme}) {
   const location = useLocation(); // Works because it's inside BrowserRouter
@@ -31,6 +32,7 @@ function AnimatedRoutes({theme}) {
           <Route path="/services" element={<Services />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectScreen />} />
           <Route path="/hire-me" element={<HireMe />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
