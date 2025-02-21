@@ -4,7 +4,6 @@
 }
 
 .projectScreen.imgCont img {
-    /* max-height: 700px; */
     max-width: 70vw;
     padding: 2%;
     box-shadow: var(--activeCol) 0px 3px 8px;
@@ -12,7 +11,7 @@
 }
 
 
-.projectScreen.imgCont img:nth-child(even) {
+.projectScreen.imgCont img:nth-child(even){
     float: right;
 }
 
@@ -29,6 +28,4 @@
     .projectScreen.imgCont img {
         max-width: 80vw;
     }
-
-
 }

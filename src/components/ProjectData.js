@@ -1,5 +1,32 @@
 const projectData = [
   {
+    id: 4,
+    img: "/Projects/careBuddy.png",
+    name: "CareBuddy",
+    heading: "A Healthcare Appointment Management System",
+    overview: `CareBuddy is a comprehensive appointment management platform designed to streamline interactions between patients and doctors. The system allows users to book, reschedule, and cancel appointments effortlessly, while doctors can manage their schedules efficiently. Built with React.js, Material UI, and MongoDB, it ensures a smooth, secure, and responsive experience with a well-structured user interface.`,
+    features: [
+      "User and Doctor Portals",
+      "Seamless Appointment Booking",
+      "Real-Time Schedule Updates",
+      "Secure User Authentication",
+      "Interactive Dashboard UI",
+      "Responsive and Modern Design"
+    ],
+    techStack: [
+      { name: "React", img: "/Skills/react.png" },
+      { name: "Tailwind", img: "/Skills/tailwind.svg" },
+      { name: "MongoDB", img: "/Skills/mongo.png" },
+      { name: "Node.js", img: "/Skills/node.png" },
+      { name: "Express.js", img: "/Skills/express.png" }
+    ],
+    links: {
+      desc: "",
+      github: "https://github.com/2012prabhat/Care-Buddy",
+      gallery: 5
+    }
+  },
+  {
     id: 1,
     img: "/Projects/cartHub.png",
     name: "CartHub",
