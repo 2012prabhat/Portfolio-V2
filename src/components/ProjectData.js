@@ -1,7 +1,7 @@
 const projectData = [
   {
     id: 1,
-    img: "/projects/cartHub.png",
+    img: "/Projects/cartHub.png",
     name: "CartHub",
     heading: "A Shopping Dashboard for Product Management",
     overview: `CartHub is a shopping admin panel designed to manage products efficiently for an e-commerce website. The dashboard allows users to add, update, and remove products while providing a structured and user-friendly interface. Built with React.js, Material UI, and Bootstrap, it ensures a modern and responsive experience with interactive UI components.`,
@@ -28,7 +28,7 @@ const projectData = [
 },
     {
         id: 2,
-        img: "/projects/gss.png",
+        img: "/Projects/gss.png",
         name: "Global Survey Solutions",
         heading: "A Professional Organization Website",
         overview: `Global Survey Solutions is a corporate website designed to showcase the company's expertise in survey research and data analysis. The website provides detailed information about the organization's services, industry experience, and client success stories. With a clean and modern design, it ensures easy navigation and accessibility for visitors. Built using React.js, CSS, and JavaScript, the website delivers a seamless user experience with responsive design and interactive elements.`,
@@ -52,7 +52,7 @@ const projectData = [
       
     {
         id:3,
-        img:"/projects/pSnipp.jpeg",
+        img:"/Projects/pSnipp.jpeg",
         name:"PSnipp",
         heading:"A Code Snippet Manager",
         overview:`Prabhat Snippets is a user-friendly web application

@@ -22,7 +22,7 @@ function ProjectScreen() {
       </div>
       <div className="projectScreen imgCont">
       {Array.from({ length: proData?.links?.gallery }, (_, index) => (
-        <img src={`${proData.name.replace(/\s+/g, "_")}/(${index + 1}).png`} alt="" />
+        <img data-aos="fade-in" src={`/Projects/${proData.name.replace(/\s+/g, "_")}/(${index + 1}).png`} alt="" />
 
       ))}
       </div>
