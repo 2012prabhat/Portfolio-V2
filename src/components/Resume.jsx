@@ -21,7 +21,7 @@ export default function Resume() {
           <ProgressBar progress={75} skill="Mongo DB" icon="mongo.png" />
           <ProgressBar progress={70} skill="Redux" icon="redux.svg" />
           <ProgressBar progress={65} skill="Firebase" icon="firebase.png" />
-          <ProgressBar progress={65} skill="Next Js" icon="next.png" />
+          <ProgressBar progress={85} skill="Next Js" icon="next.png" />
         </div>
       </div>
 
