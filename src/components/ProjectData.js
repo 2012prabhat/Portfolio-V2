@@ -1,5 +1,34 @@
 const projectData = [
   {
+    id: 5,
+    img: "/Projects/checkInn.png",
+    name: "CheckInn",
+    heading: "A Hotel Booking Management System",
+    overview: `CheckInn is a full-fledged hotel booking platform that simplifies the process of finding and reserving accommodations. Users can browse hotels, check availability, and make secure bookings, while administrators can manage listings, bookings, and payments seamlessly. With features like real-time updates, Stripe payment integration, and JWT authentication, CheckInn ensures a smooth and secure booking experience.`,
+    features: [
+      "User and Admin Dashboards",
+      "Secure Hotel Booking System",
+      "Stripe Payment Integration",
+      "JWT Authentication & Authorization",
+      "Review & Rating System",
+      "Responsive and User-Friendly Design"
+    ],
+    techStack: [
+      { name: "Next.js", img: "/Skills/next.png" },
+      { name: "Tailwind", img: "/Skills/tailwind.svg" },
+      { name: "MongoDB", img: "/Skills/mongo.png" },
+      { name: "Zustand", img: "/Skills/zustand.png" },
+      { name: "Stripe", img: "/Skills/stripe.png" }
+    ],
+    links: {
+      desc: "",
+      github: "https://github.com/2012prabhat/CheckInn",
+      live:"https://checkinn-hotel.vercel.app/",
+      gallery: 6
+    }
+}
+,
+  {
     id: 4,
     img: "/Projects/careBuddy.png",
     name: "CareBuddy",
