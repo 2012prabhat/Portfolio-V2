@@ -1,4 +1,5 @@
 const projectData = [
+
   {
     id: 5,
     img: "/Projects/checkInn.png",
@@ -136,6 +137,30 @@ const projectData = [
            
           }
       },
+      {
+        "id": 6,
+        "img": "/Projects/5thPoll.png",
+        "name": "5th Poll",
+        "heading": "Survey & Rewards Platform",
+        "overview": "5th Poll is an admin-controlled survey platform where users participate in surveys to earn reward points. Admins create and manage surveys, while users complete them to accumulate points. These points can be redeemed in the integrated product store for discounts or free items. The system includes secure authentication, point tracking, and a seamless store checkout experience.",
+        "features": [
+          "Admin-Managed Surveys",
+          "Point Reward System",
+          "Product Store with Point Redemption",
+          "User Dashboard for Points Tracking",
+          "Secure Authentication & Transactions"
+        ],
+        "techStack": [
+          { "name": "React", "img": "/Skills/react.png" },
+          { "name": "Django", "img": "/Skills/django.svg" },
+          { "name": "PostgreSQL", "img": "/Skills/sql.svg" },
+        ],
+        "links": {
+          "desc": "",
+          "live": "https://5thpoll.com",
+          "gallery": 8
+        }
+    }
 
   ]
 
