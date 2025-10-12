@@ -1,7 +1,7 @@
 const projectData = [
 {
   id: 6,
-  img: "/Projects/chatwise.png",
+  img: "/Projects/chatWise.png",
   name: "Chatwise",
   heading: "AI Chatbot Integration Platform",
   overview: `Chatwise is a customizable chatbot integration platform built with Next.js and MongoDB. It enables users to generate secure API keys, embed intelligent chatbots into any website, and manage their integrations seamlessly. With JWT-based authentication, real-time communication, and an elegant dashboard, Chatwise makes AI chatbot integration simple and scalable.`,
