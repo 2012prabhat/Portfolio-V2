@@ -1,5 +1,32 @@
 const projectData = [
-
+{
+  id: 6,
+  img: "/Projects/chatwise.png",
+  name: "Chatwise",
+  heading: "AI Chatbot Integration Platform",
+  overview: `Chatwise is a customizable chatbot integration platform built with Next.js and MongoDB. It enables users to generate secure API keys, embed intelligent chatbots into any website, and manage their integrations seamlessly. With JWT-based authentication, real-time communication, and an elegant dashboard, Chatwise makes AI chatbot integration simple and scalable.`,
+  features: [
+    "JWT Authentication with Secure Login",
+    "API Key Generation and Management",
+    "Chatbot Embedding for Any Website",
+    "Real-time AI Chat Interface",
+    "Integration Dashboard for Developers",
+    "Modern and Responsive UI Design"
+  ],
+  techStack: [
+    { name: "Next.js", img: "/Skills/next.png" },
+    { name: "MongoDB", img: "/Skills/mongo.png" },
+    { name: "Tailwind", img: "/Skills/tailwind.svg" },
+    { name: "Zustand", img: "/Skills/zustand.png" },
+  ],
+  links: {
+    desc: "",
+    github: "https://github.com/2012prabhat/Chatwise",
+    live: "https://chatwise-chatbot.vercel.app/",
+    gallery: 7
+  }
+}
+,
   {
     id: 5,
     img: "/Projects/checkInn.png",
@@ -29,6 +56,31 @@ const projectData = [
     }
 }
 ,
+
+  {
+        "id": 0,
+        "img": "/Projects/5thPoll.png",
+        "name": "5th Poll",
+        "heading": "Survey & Rewards Platform",
+        "overview": "5th Poll is an admin-controlled survey platform where users participate in surveys to earn reward points. Admins create and manage surveys, while users complete them to accumulate points. These points can be redeemed in the integrated product store for discounts or free items. The system includes secure authentication, point tracking, and a seamless store checkout experience.",
+        "features": [
+          "Admin-Managed Surveys",
+          "Point Reward System",
+          "Product Store with Point Redemption",
+          "User Dashboard for Points Tracking",
+          "Secure Authentication & Transactions"
+        ],
+        "techStack": [
+          { "name": "React", "img": "/Skills/react.png" },
+          { "name": "Django", "img": "/Skills/django.svg" },
+          { "name": "PostgreSQL", "img": "/Skills/sql.svg" },
+        ],
+        "links": {
+          "desc": "",
+          "live": "https://panel.5thpoll.com",
+          "gallery": 12
+        }
+    },
   {
     id: 4,
     img: "/Projects/careBuddy.png",
@@ -57,7 +109,7 @@ const projectData = [
     }
   },
   {
-    id: 1,
+    id: 3,
     img: "/Projects/cartHub.png",
     name: "CartHub",
     heading: "A Shopping Dashboard for Product Management",
@@ -108,7 +160,7 @@ const projectData = [
       },
       
     {
-        id:3,
+        id:1,
         img:"/Projects/pSnipp.jpeg",
         name:"PSnipp",
         heading:"A Code Snippet Manager",
@@ -137,30 +189,7 @@ const projectData = [
            
           }
       },
-      {
-        "id": 6,
-        "img": "/Projects/5thPoll.png",
-        "name": "5th Poll",
-        "heading": "Survey & Rewards Platform",
-        "overview": "5th Poll is an admin-controlled survey platform where users participate in surveys to earn reward points. Admins create and manage surveys, while users complete them to accumulate points. These points can be redeemed in the integrated product store for discounts or free items. The system includes secure authentication, point tracking, and a seamless store checkout experience.",
-        "features": [
-          "Admin-Managed Surveys",
-          "Point Reward System",
-          "Product Store with Point Redemption",
-          "User Dashboard for Points Tracking",
-          "Secure Authentication & Transactions"
-        ],
-        "techStack": [
-          { "name": "React", "img": "/Skills/react.png" },
-          { "name": "Django", "img": "/Skills/django.svg" },
-          { "name": "PostgreSQL", "img": "/Skills/sql.svg" },
-        ],
-        "links": {
-          "desc": "",
-          "live": "https://5thpoll.com",
-          "gallery": 8
-        }
-    }
+    
 
   ]
 
