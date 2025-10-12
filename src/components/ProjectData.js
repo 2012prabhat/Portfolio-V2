@@ -23,7 +23,7 @@ const projectData = [
     desc: "",
     github: "https://github.com/2012prabhat/Chatwise",
     live: "https://chatwise-chatbot.vercel.app/",
-    gallery: 7
+    gallery: 6
   }
 }
 ,
