@@ -43,7 +43,7 @@ function Contact() {
 
   };
   return (
-    <div className='contactCont'>
+    <section className='contactCont' id='contact'>
 
         <h1 data-aos="zoom-in">Let's Harmonize Success Together: <br />
         Your Vision, My Expertise</h1>
@@ -111,7 +111,7 @@ function Contact() {
       </div>
       <button type="submit">Send Message</button>
     </form>
-      </div>
+      </section>
     
   )
 }

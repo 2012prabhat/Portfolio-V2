@@ -5,7 +5,7 @@ import { workEx } from "./WorkExData";
 
 export default function Resume() {
   return (
-    <>
+    <section id="resume">
       <div className="projectsCont">
         <h1 data-aos="fade-in">My Skills</h1>
         <h3 data-aos="zoom-in">"Building seamless experiences with clean and efficient code."</h3>
@@ -81,6 +81,6 @@ export default function Resume() {
         <br />
         <br />
       </div>
-    </>
+    </section>
   );
 }

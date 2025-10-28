@@ -10,7 +10,7 @@
     position: fixed;
     width: 100%;
     top: -3px;
-    z-index: 1;
+    z-index: 10;
     background: var(--bgCol); 
    }
   
@@ -27,6 +27,7 @@
     font-size: 1.2rem;
     transition: all 0.5s;
     position: relative;
+    cursor: pointer;
   } 
   .dark .nav-link{
     color: white;

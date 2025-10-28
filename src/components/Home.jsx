@@ -41,7 +41,7 @@ const Home = ({theme}) => {
     return totalExperience;
 }
   return (
-    <div className="home">
+    <section className="home" id="home">
       {/* Introduction Section */}
 
       <div className="introCont">
@@ -148,7 +148,7 @@ const Home = ({theme}) => {
         <p>Code commits</p>
       </div>
     </div>
-    </div>
+    </section>
   );
 };
 

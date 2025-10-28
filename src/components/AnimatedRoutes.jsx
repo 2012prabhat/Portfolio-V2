@@ -28,13 +28,20 @@ function AnimatedRoutes({theme}) {
         </div>
         <div style={{marginTop:'70px'}}>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home theme={theme}/>} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/" element={
+            <>
+            <Home theme={theme}/>
+            <Services />
+            <Resume />
+            <Projects />  
+            <Contact />
+            </>}/>
+          {/* <Route path="/services" element={<Services />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects />} /> */}
           <Route path="/projects/:id" element={<ProjectScreen />} />
-          <Route path="/hire-me" element={<HireMe />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/hire-me" element={<HireMe />} />
+          <Route path="/contact" element={<Contact />} /> */}
         </Routes>
         </div>
        

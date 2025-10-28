@@ -16,7 +16,7 @@ function Projects() {
 
 
   return (
-    <section className="projects">
+    <div className="projects">
       <div className="proCont">
 
 <Swiper
@@ -52,7 +52,7 @@ function Projects() {
     </Swiper>
         
       </div>
-    </section>
+    </div>
   );
 }
 

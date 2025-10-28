@@ -8,7 +8,7 @@ import cardData from './ServicesData'
 
 export default function Services() {
   return (
-    <div className="servicesCont">
+    <section id='services' className="servicesCont">
       <h1 data-aos="fade-in">Let’s Build Something Exceptional</h1>
       <h3 data-aos="zoom-in">"Whether it’s a sleek portfolio, an engaging e-commerce platform, or a robust web application, I’m here to make it happen."</h3>
       <div className="cardsCont">
@@ -21,6 +21,6 @@ export default function Services() {
         </div>
       ))}
       </div>
-    </div>
+    </section>
   )
 }
